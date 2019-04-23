@@ -1,9 +1,9 @@
 resources:
-  - name: sample_python
+  - name: node_app_jfrog
     type: gitRepo
-    repoPath: manishas/node_app_jfrog
+    repoPath: skylark05/node_app_jfrog
     configuration:
-      integrationName: manishas_github
+      integrationName: skylar05_github
       branches:
         only: master
     initialVersion:
@@ -21,7 +21,7 @@ pipelines:
             type: host
         triggeredBy:
           resources:
-            - sample_python 
+            - node_app_jfrog 
         execution:
           onExecute:
             - echo "First run....."
