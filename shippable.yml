@@ -3,7 +3,7 @@ resources:
     type: gitRepo
     repoPath: skylark05/node_app_jfrog
     configuration:
-      integrationName: skylark05_github
+      integrationName: github_skylark05
       branches:
         only: master
     initialVersion:
